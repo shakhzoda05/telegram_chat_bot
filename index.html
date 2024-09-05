@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat bot bilan ishlash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-image: linear-gradient(to right, #f6d8b2, #f6b76a);
+
+        font-family: "Arial", sans-serif;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      .product-card {
+        transition: transform 0.3s ease;
+      }
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+      .product-card img {
+        transition: opacity 0.3s ease;
+      }
+      .product-card:hover img {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body class="p-6">
+    <div class="container mx-auto">
+      <h1 class="text-5xl font-bold text-center mb-8 font-sans text-orange-400">
+        Products
+      </h1>
+      <div
+        id="products"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
